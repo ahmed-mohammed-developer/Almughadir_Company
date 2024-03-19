@@ -1,3 +1,44 @@
-h1 {
-     color: blue;
+.header {
+     position: absolute;
+     width: 100%;
+     top: 0;
+     left: 0;
+     right: 0;
+     z-index: 900000;
 }
+.header .header_panel {
+     background: #00008E;
+     color: #E1E1E1;
+     padding: 10px 0;
+}
+.header .header_panel .link{
+     transition: all 0.5s ease;
+}
+.header .header_panel .link:hover,
+.header .header_panel .link:focus  {
+     opacity: .8;
+}
+.header .header_panel .header_panel-socials {
+     font-size: 24px;
+     gap: 15px;
+     margin-bottom: 0 !important;
+}
+.header .header_panel .header_panel-socials .color-icon {
+     color: #fff;
+}
+.header .header_panel .header_panel-tel {
+     color: #fff;
+     font-weight: 700;
+     margin-bottom: 0 !important;
+}
+
+@media (width < 405px){
+          .header .header_panel .header_panel-socials {
+               font-size: 15px;
+               gap: 10px;
+          }
+          .header .header_panel .header_panel-tel {
+               font-size: 15px;
+          }
+}
+
